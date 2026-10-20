@@ -1,12 +1,3 @@
-Chào bạn, mình đã nhận được username GitHub của bạn là **`shirmtry`**. 
-
-Mình đã cập nhật lại toàn bộ file theo đúng username này. Đồng thời, mình đã **mã hóa các ký tự tiếng Việt** trong đường link ảnh (như `Đinh Tấn Huy`, `Quy Nhơn`) để khắc phục triệt để lỗi ảnh bị vỡ (Broken Image) trên GitHub. 
-
-Ngoài ra, mình cũng đã **xóa dòng "Dự án / giải thưởng cấp trường"** trong bảng Thành tích như bạn đã dặn ở tin nhắn trước, và giữ lại duy nhất Gmail ở phần liên hệ.
-
-Bạn copy toàn bộ đoạn code dưới đây dán đè vào file `README.md` trên GitHub của bạn nhé:
-
-```markdown
 <!-- ============================================================ -->
 <!--  GitHub Profile README · Đinh Tấn Huy (shirmtry)             -->
 <!-- ============================================================ -->
