@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Block Blast 8x8</title>
+    <style>
+        :root {
+            --bg-color: #1a1a2e;
+            --grid-bg: #16213e;
+            --cell-bg: #0f3460;
+            --text-color: #e94560;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+            user-select: none;
+            touch-action: none;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: var(--text-color);
+            margin: 0 0 10px 0;
+            font-size: 2rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .score-board {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff;
+        }
+
+        /* Bàn chơi 8x8 */
+        #game-board {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            grid-template-rows: repeat(8, 1fr);
+            gap: 2px;
+            background-color: var(--grid-bg);
+            padding: 4px;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(233, 69, 96, 0.2);
+            width: 90vw;
+            max-width: 400px;
+            aspect-ratio: 1 / 1;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .cell {
+            background-color: var(--cell-bg);
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+
+        .cell.filled {
+            box-shadow: inset 0 0 10px rgba(0,0,0,0.5);
+        }
+
+        /* Khu vực chứa các khối gạch */
+        #pieces-container {
+            display: flex;
+            justify-content: space-around;
+            width: 90vw;
+            max-width: 400px;
+            height: 120px;
+        }
+
+        .piece-slot {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.05);
+            border-radius: 8px;
+            cursor: grab;
+        }
+
+        .piece-slot:active {
+            cursor: grabbing;
+        }
+
+        .piece-grid {
+            display: grid;
+            gap: 2px;
+        }
+
+        .piece-cell {
+            width: 20px;
+            height: 20px;
+            border-radius: 3px;
+            background-color: transparent;
+        }
+
+        .piece-cell.filled {
+            box-shadow: inset 0 0 5px rgba(0,0,0,0.5);
+        }
+
+        /* Hiệu ứng khi kéo thả */
+        .dragging-piece {
+            position: absolute;
+            pointer-events: none;
+            z-index: 1000;
+            opacity: 0.8;
+            transform: scale(1.1);
+            transition: transform 0.1s;
+        }
+
+        /* Game Over Overlay */
+        #game-over {
+            position: fixed;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: rgba(0, 0, 0, 0.85);
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 2000;
+        }
+
+        #game-over h2 {
+            color: var(--text-color);
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        #game-over p {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+        }
+
+        button {
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            background-color: var(--text-color);
+            color: white;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        button:hover {
+            transform: scale(1.05);
+            background-color: #ff2e4d;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Block Blast</h1>
+        <div class="score-board">Score: <span id="score">0</span></div>
+    </div>
+
+    <div id="game-board"></div>
+
+    <div id="pieces-container">
+        <div class="piece-slot" id="slot-0"></div>
+        <div class="piece-slot" id="slot-1"></div>
+        <div class="piece-slot" id="slot-2"></div>
+    </div>
+
+    <div id="game-over">
+        <h2>GAME OVER</h2>
+        <p>Điểm của bạn: <span id="final-score">0</span></p>
+        <button onclick="initGame()">Chơi Lại</button>
+    </div>
+
+    <script>
+        const GRID_SIZE = 8;
+        const COLORS = ['#e94560', '#533483', '#0f3460', '#00b4d8', '#f4a261', '#2a9d8f'];
+        
+        let board = [];
+        let score = 0;
+        let currentPieces = [];
+        let draggedPiece = null;
+        let dragStartX = 0;
+        let dragStartY = 0;
+        let floatingElement = null;
+
+        // Định nghĩa các hình dạng khối (ma trận)
+        const SHAPES = [
+            [[1]], // 1x1
+            [[1, 1]], // 1x2
+            [[1], [1]], // 2x1
+            [[1, 1, 1]], // 1x3
+            [[1], [1], [1]], // 3x1
+            [[1, 1, 1, 1]], // 1x4
+            [[1], [1], [1], [1]], // 4x1
+            [[1, 1], [1, 1]], // 2x2
+            [[1, 1, 1], [1, 1, 1], [1, 1, 1]], // 3x3
+            [[1, 0], [1, 0], [1, 1]], // L-shape
+            [[0, 1], [0, 1], [1, 1]], // J-shape
+            [[1, 1, 0], [0, 1, 1]], // S-shape
+            [[0, 1, 1], [1, 1, 0]], // Z-shape
+            [[1, 1, 1], [0, 1, 0]], // T-shape
+        ];
+
+        const boardElement = document.getElementById('game-board');
+        const scoreElement = document.getElementById('score');
+        const finalScoreElement = document.getElementById('final-score');
+        const gameOverScreen = document.getElementById('game-over');
+        const slots = [
+            document.getElementById('slot-0'),
+            document.getElementById('slot-1'),
+            document.getElementById('slot-2')
+        ];
+
+        // Khởi tạo game
+        function initGame() {
+            board = Array(GRID_SIZE).fill(null).map(() => Array(GRID_SIZE).fill(0));
+            score = 0;
+            updateScore();
+            gameOverScreen.style.display = 'none';
+            renderBoard();
+            generateNewPieces();
+        }
+
+        // Cập nhật điểm
+        function updateScore() {
+            scoreElement.innerText = score;
+        }
+
+        // Vẽ bàn chơi
+        function renderBoard() {
+            boardElement.innerHTML = '';
+            for (let r = 0; r < GRID_SIZE; r++) {
+                for (let c = 0; c < GRID_SIZE; c++) {
+                    const cell = document.createElement('div');
+                    cell.classList.add('cell');
+                    cell.dataset.row = r;
+                    cell.dataset.col = c;
+                    if (board[r][c] !== 0) {
+                        cell.classList.add('filled');
+                        cell.style.backgroundColor = board[r][c];
+                    }
+                    boardElement.appendChild(cell);
+                }
+            }
+        }
+
+        // Tạo ngẫu nhiên 3 khối mới
+        function generateNewPieces() {
+            currentPieces = [];
+            for (let i = 0; i < 3; i++) {
+                const shape = SHAPES[Math.floor(Math.random() * SHAPES.length)];
+                const color = COLORS[Math.floor(Math.random() * COLORS.length)];
+                currentPieces.push({ shape, color, placed: false });
+                renderPieceInSlot(i, shape, color);
+            }
+            checkGameOver();
+        }
+
+        // Vẽ khối vào khu vực chờ
+        function renderPieceInSlot(slotIndex, shape, color) {
+            const slot = slots[slotIndex];
+            slot.innerHTML = '';
+            
+            const pieceGrid = document.createElement('div');
+            pieceGrid.classList.add('piece-grid');
+            pieceGrid.style.gridTemplateColumns = `repeat(${shape[0].length}, 20px)`;
+            pieceGrid.style.gridTemplateRows = `repeat(${shape.length}, 20px)`;
+
+            for (let r = 0; r < shape.length; r++) {
+                for (let c = 0; c < shape[r].length; c++) {
+                    const cell = document.createElement('div');
+                    cell.classList.add('piece-cell');
+                    if (shape[r][c] === 1) {
+                        cell.classList.add('filled');
+                        cell.style.backgroundColor = color;
+                    }
+                    pieceGrid.appendChild(cell);
+                }
+            }
+
+            // Gắn sự kiện kéo thả
+            pieceGrid.addEventListener('pointerdown', (e) => startDrag(e, slotIndex, shape, color, pieceGrid));
+            slot.appendChild(pieceGrid);
+        }
+
+        // Bắt đầu kéo
+        function startDrag(e, slotIndex, shape, color, originalElement) {
+            if (currentPieces[slotIndex].placed) return;
+            
+            e.preventDefault();
+            
+            draggedPiece = { slotIndex, shape, color, placed: false };
+            
+            // Tạo bản sao lơ lửng để kéo
+            floatingElement = originalElement.cloneNode(true);
+            floatingElement.classList.add('dragging-piece');
+            document.body.appendChild(floatingElement);
+            
+            originalElement.style.opacity = '0.2';
+            
+            // Lấy vị trí ban đầu
+            const rect = originalElement.getBoundingClientRect();
+            dragStartX = e.clientX - rect.left;
+            dragStartY = e.clientY - rect.top;
+            
+            moveFloatingElement(e.clientX, e.clientY);
+
+            document.addEventListener('pointermove', onDrag);
+            document.addEventListener('pointerup', stopDrag);
+        }
+
+        // Di chuyển trong lúc kéo
+        function onDrag(e) {
+            if (!draggedPiece) return;
+            moveFloatingElement(e.clientX, e.clientY);
+            highlightPlacement(e.clientX, e.clientY);
+        }
+
+        function moveFloatingElement(clientX, clientY) {
+            floatingElement.style.left = `${clientX - dragStartX}px`;
+            floatingElement.style.top = `${clientY - dragStartY}px`;
+        }
+
+        // Làm nổi bật ô sẽ được đặt
+        function highlightPlacement(clientX, clientY) {
+            // Xóa highlight cũ
+            document.querySelectorAll('.cell').forEach(c => c.style.border = 'none');
+
+            const gridRect = boardElement.getBoundingClientRect();
+            const cellSize = gridRect.width / GRID_SIZE;
+            
+            // Tọa độ của góc trên cùng bên trái của khối gạch so với bàn chơi
+            const targetX = clientX - dragStartX - gridRect.left;
+            const targetY = clientY - dragStartY - gridRect.top;
+
+            const startCol = Math.round(targetX / cellSize);
+            const startRow = Math.round(targetY / cellSize);
+
+            if (canPlace(draggedPiece.shape, startRow, startCol)) {
+                // Highlight màu xanh nếu đặt được
+                for (let r = 0; r < draggedPiece.shape.length; r++) {
+                    for (let c = 0; c < draggedPiece.shape[r].length; c++) {
+                        if (draggedPiece.shape[r][c] === 1) {
+                            const cell = document.querySelector(`.cell[data-row="${startRow + r}"][data-col="${startCol + c}"]`);
+                            if (cell) {
+                                cell.style.border = '2px solid white';
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // Kết thúc kéo
+        function stopDrag(e) {
+            document.removeEventListener('pointermove', onDrag);
+            document.removeEventListener('pointerup', stopDrag);
+            
+            if (!draggedPiece) return;
+
+            const gridRect = boardElement.getBoundingClientRect();
+            const cellSize = gridRect.width / GRID_SIZE;
+            
+            const targetX = e.clientX - dragStartX - gridRect.left;
+            const targetY = e.clientY - dragStartY - gridRect.top;
+
+            const startCol = Math.round(targetX / cellSize);
+            const startRow = Math.round(targetY / cellSize);
+
+            if (canPlace(draggedPiece.shape, startRow, startCol)) {
+                // Đặt gạch
+                placePiece(draggedPiece.shape, draggedPiece.color, startRow, startCol);
+                currentPieces[draggedPiece.slotIndex].placed = true;
+                slots[draggedPiece.slotIndex].innerHTML = ''; // Xóa khối khỏi khu vực chờ
+                
+                checkLines();
+                
+                // Nếu cả 3 khối đã đặt, tạo 3 khối mới
+                if (currentPieces.every(p => p.placed)) {
+                    setTimeout(generateNewPieces, 300);
+                } else {
+                    checkGameOver();
+                }
+            } else {
+                // Trả lại hiệu ứng nếu đặt sai
+                slots[draggedPiece.slotIndex].firstChild.style.opacity = '1';
+            }
+
+            // Reset
+            document.querySelectorAll('.cell').forEach(c => c.style.border = 'none');
+            floatingElement.remove();
+            draggedPiece = null;
+            floatingElement = null;
+        }
+
+        // Kiểm tra xem có thể đặt khối vào vị trí này không
+        function canPlace(shape, row, col) {
+            if (row < 0 || col < 0 || row + shape.length > GRID_SIZE || col + shape[0].length > GRID_SIZE) {
+                return false;
+            }
+            for (let r = 0; r < shape.length; r++) {
+                for (let c = 0; c < shape[r].length; c++) {
+                    if (shape[r][c] === 1) {
+                        if (board[row + r][col + c] !== 0) return false;
+                    }
+                }
+            }
+            return true;
+        }
+
+        // Đặt khối vào bàn chơi
+        function placePiece(shape, color, row, col) {
+            let blocksPlaced = 0;
+            for (let r = 0; r < shape.length; r++) {
+                for (let c = 0; c < shape[r].length; c++) {
+                    if (shape[r][c] === 1) {
+                        board[row + r][col + c] = color;
+                        blocksPlaced++;
+                    }
+                }
+            }
+            score += blocksPlaced; // Cộng điểm bằng số ô đã đặt
+            updateScore();
+            renderBoard();
+        }
+
+        // Kiểm tra và xóa các hàng/cột đầy
+        function checkLines() {
+            let rowsCleared = 0;
+            let colsCleared = 0;
+
+            // Kiểm tra hàng
+            for (let r = 0; r < GRID_SIZE; r++) {
+                if (board[r].every(cell => cell !== 0)) {
+                    board[r].fill(0);
+                    rowsCleared++;
+                }
+            }
+
+            // Kiểm tra cột
+            for (let c = 0; c < GRID_SIZE; c++) {
+                let isFull = true;
+                for (let r = 0; r < GRID_SIZE; r++) {
+                    if (board[r][c] === 0) {
+                        isFull = false;
+                        break;
+                    }
+                }
+                if (isFull) {
+                    for (let r = 0; r < GRID_SIZE; r++) {
+                        board[r][c] = 0;
+                    }
+                    colsCleared++;
+                }
+            }
+
+            if (rowsCleared > 0 || colsCleared > 0) {
+                // Tính điểm combo (càng xóa nhiều càng nhiều điểm)
+                let points = (rowsCleared + colsCleared) * 10;
+                if (rowsCleared > 1 || colsCleared > 1) points *= 2; // Combo bonus
+                
+                score += points;
+                updateScore();
+                renderBoard();
+            }
+        }
+
+        // Kiểm tra điều kiện Game Over
+        function checkGameOver() {
+            // Nếu còn khối chưa đặt, xem thử có chỗ nào đặt được không
+            for (let i = 0; i < currentPieces.length; i++) {
+                if (!currentPieces[i].placed) {
+                    if (canPlaceAnywhere(currentPieces[i].shape)) {
+                        return; // Vẫn còn nước đi, chưa thua
+                    }
+                }
+            }
+            
+            // Nếu không còn khối nào đặt được
+            finalScoreElement.innerText = score;
+            gameOverScreen.style.display = 'flex';
+        }
+
+        function canPlaceAnywhere(shape) {
+            for (let r = 0; r < GRID_SIZE; r++) {
+                for (let c = 0; c < GRID_SIZE; c++) {
+                    if (canPlace(shape, r, c)) return true;
+                }
+            }
+            return false;
+        }
+
+        // Chạy game khi tải trang
+        initGame();
+    </script>
+</body>
+</html>
