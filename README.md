@@ -166,12 +166,10 @@ flowchart LR
 
 <br/>
 
-<!-- Đã đổi sang server Heroku ổn định hơn -->
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=shirmtry&theme=radical&hide_border=true" alt="GitHub Streak"/>
 
 <br/>
 
-<!-- Profile Summary Card -->
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=shirmtry&theme=radical" alt="Profile Details" width="95%"/>
 
 </div>
@@ -194,7 +192,7 @@ flowchart LR
 
 ---
 
-## 🎮 Gaming & Roblox Corner (Pac-Man Game)
+## 🎮 GAMING & ROBLOX CORNER
 
 <div align="center">
 
@@ -203,10 +201,11 @@ flowchart LR
 
 <br/><br/>
 
-<p><b>🎯 Cùng chơi Pac-Man ăn các ô đóng góp của mình nhé!</b></p>
+<p><b>🎯 Cùng chơi game Block Blast 8x8 do mình tự làm nhé!</b></p>
 
-<!-- Game Pac-Man (Cần cài Github Action bên dưới) -->
-<img src="./images/trophy.svg" alt="GitHub Trophies" width="100%"/>
+<a href="https://shirmtry.github.io/shirmtry/game.html" target="_blank">
+  <img src="https://img.shields.io/badge/PLAY-BLOCK_BLAST_8x8-FF5722?style=for-the-badge&logo=gamepad&logoColor=white" alt="Play Block Blast" height="60" />
+</a>
 
 </div>
 
