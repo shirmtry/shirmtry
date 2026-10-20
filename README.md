@@ -4,10 +4,8 @@
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=shirmtry&fontSize=60&fontColor=ffffff&fontAlignY=40" width="100%" alt="Header banner"/>
-
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=900&color=A78BFA&center=true&vCenter=true&width=720&lines=Full-Stack+Developer;Computer+Vision+%26+Edge+AI;System+Architect;IoT+%26+Embedded+Dev;From+Raw+Data+to+Production+%F0%9F%9A%80" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=900&color=A78BFA&center=true&vCenter=true&width=720&lines=Full-Stack+Developer;Computer+Vision+%26+Edge+AI;System+Architect;IoT+%26+Embedded+Dev;Gamer+%26+Roblox+Enthusiast;From+Raw+Data+to+Production+%F0%9F%9A%80" alt="Typing SVG" />
 </a>
 
 <br/>
@@ -44,10 +42,11 @@ dựng backend/frontend, đóng gói Docker, deploy serverless cho tới dashboa
 ```
 
 - 🎓 **Sinh viên Công nghệ Thông tin** tại FPT University Quy Nhơn.
-- 💼 **Freelancer:** Song song với việc học, mình nhận các dự án Freelance (Full-Stack, Computer Vision, IoT) để kiếm thêm thu nhập và tích lũy kinh nghiệm thực chiến.
-- 🔁 Phong cách **End-to-End**: Tự đảm nhận toàn bộ vòng đời sản phẩm, từ ý tưởng đến khi deploy và bảo trì.
-- 👁️ Đam mê **Computer Vision, Edge AI** và các hệ thống **IoT/Embedded** chạy thời gian thực.
-- 🌏 Giao tiếp tiếng Anh (**IELTS 6.5**) và tiếng Nhật (**JLPT N3**), sẵn sàng làm việc trong môi trường quốc tế.
+- 💼 **Freelancer:** Song song với việc học, mình nhận các dự án Freelance (Full-Stack, Computer Vision, IoT) để kiếm thêm thu nhập.
+- 🔁 Phong cách **End-to-End**: Tự đảm nhận toàn bộ vòng đời sản phẩm, từ ý tưởng đến khi deploy.
+- 👁️ Đam mê **Computer Vision, Edge AI** và các hệ thống **IoT/Embedded**.
+- 🌏 Giao tiếp tiếng Anh (**IELTS 6.5**) và tiếng Nhật (**JLPT N3**).
+- 🎮 **Gamer:** Thích chơi game giải trí, đặc biệt là các tựa game thế giới mở, sáng tạo như **Roblox**.
 
 ---
 
@@ -169,18 +168,48 @@ flowchart LR
 
 <img src="https://streak-stats.demolab.com/?user=shirmtry&theme=radical&hide_border=true" alt="GitHub Streak"/>
 
-<br/><br/>
+<br/>
 
-<!-- Phần Cúp Thành Tích (Thay thế cho Contribution Graph bị lỗi) -->
+<!-- Profile Summary Card -->
+<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=shirmtry&theme=radical" alt="Profile Details" width="95%"/>
+
+<br/>
+
+<!-- Trophies -->
 <img src="https://github-profile-trophy.vercel.app/?username=shirmtry&theme=radical&column=7&margin-w=15&margin-h=15" alt="GitHub Trophies" width="100%"/>
 
 </div>
 
 ---
 
-## 💬 Random Dev Quote (Câu nói mỗi ngày)
+## 🎮 Gaming & Roblox Corner (Pac-Man Game)
 
 <div align="center">
+
+<img src="https://img.shields.io/badge/Roblox-Player_%26_Creator-FF0000?style=for-the-badge&logo=roblox&logoColor=white" alt="Roblox" />
+<img src="https://img.shields.io/badge/Gamer-Since_Childhood-blueviolet?style=for-the-badge&logo=steam&logoColor=white" alt="Gamer" />
+
+<br/><br/>
+
+<!-- Hình ảnh minh họa Roblox/Gaming vibe -->
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3Z2ZzR6eHZpZ3V4Z3R4Z3R4Z3R4Z3R4Z3R4Z3R4Z3R4JmVuY3J5cHRlZElkPUEwMDAwMDAwMDAwMDAmZXA9djFfaW50ZXJuYWxfZ2lmX2J5X2lkJmN0PWc/3o7TKSjRrfIPjeiVyM/giphy.gif" alt="Roblox Dance" width="300px" style="border-radius: 10px;"/>
+
+<br/><br/>
+
+<p><b>🎯 Cùng chơi Pac-Man ăn các ô đóng góp của mình nhé!</b></p>
+
+<!-- Game Pac-Man (Cần cài Github Action bên dưới) -->
+<img src="https://raw.githubusercontent.com/shirmtry/shirmtry/output/pacman-contribution-graph.svg" alt="Pac-Man Contribution Graph" width="100%" />
+
+</div>
+
+---
+
+## 😆 Developer Jokes & Quotes
+
+<div align="center">
+  <img src="https://readme-jokes.vercel.app/api?theme=tokyonight" alt="Jokes Card" />
+  <br/><br/>
   <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Random Dev Quote" />
 </div>
 
@@ -197,7 +226,5 @@ flowchart LR
 <br/><br/>
 
 *"Dữ liệu là nguyên liệu, model là công cụ, sản phẩm chạy thật mới là đích đến."* 🚀
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=120&section=footer" width="100%" alt="Footer"/>
 
 </div>
