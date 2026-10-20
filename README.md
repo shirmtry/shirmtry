@@ -1,10 +1,19 @@
+Chào bạn, mình đã nhận được username GitHub của bạn là **`shirmtry`**. 
+
+Mình đã cập nhật lại toàn bộ file theo đúng username này. Đồng thời, mình đã **mã hóa các ký tự tiếng Việt** trong đường link ảnh (như `Đinh Tấn Huy`, `Quy Nhơn`) để khắc phục triệt để lỗi ảnh bị vỡ (Broken Image) trên GitHub. 
+
+Ngoài ra, mình cũng đã **xóa dòng "Dự án / giải thưởng cấp trường"** trong bảng Thành tích như bạn đã dặn ở tin nhắn trước, và giữ lại duy nhất Gmail ở phần liên hệ.
+
+Bạn copy toàn bộ đoạn code dưới đây dán đè vào file `README.md` trên GitHub của bạn nhé:
+
+```markdown
 <!-- ============================================================ -->
 <!--  GitHub Profile README · Đinh Tấn Huy (shirmtry)             -->
 <!-- ============================================================ -->
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=230&section=header&text=Đinh%20Tấn%20Huy&fontSize=58&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=End-to-End%20Developer%20%7C%20AI%20%26%20System%20Engineer&descSize=18&descAlignY=58" width="100%" alt="Header banner"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=230&section=header&text=%C4%90inh%20T%E1%BA%A5n%20Huy&fontSize=58&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=End-to-End%20Developer%20%7C%20AI%20%26%20System%20Engineer&descSize=18&descAlignY=58" width="100%" alt="Header banner"/>
 
 <a href="https://git.io/typing-svg">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=900&color=A78BFA&center=true&vCenter=true&width=720&lines=Full-Stack+Developer;Computer+Vision+%26+Edge+AI;System+Architect;IoT+%26+Embedded+Dev;From+Raw+Data+to+Production+%F0%9F%9A%80" alt="Typing SVG" />
@@ -14,7 +23,7 @@
 
 <img src="https://img.shields.io/badge/IELTS-6.5-E4002B?style=for-the-badge&logo=cambridge&logoColor=white" alt="IELTS 6.5"/>
 <img src="https://img.shields.io/badge/JLPT-N3-D70051?style=for-the-badge&logo=japan&logoColor=white" alt="JLPT N3"/>
-<img src="https://img.shields.io/badge/FPT_University-Quy_Nhơn-F27124?style=for-the-badge&logo=googlescholar&logoColor=white" alt="FPT University"/>
+<img src="https://img.shields.io/badge/FPT_University-Quy_Nh%C6%A1n-F27124?style=for-the-badge&logo=googlescholar&logoColor=white" alt="FPT University"/>
 <img src="https://img.shields.io/badge/Status-Student_%26_Freelancer-ff69b4?style=for-the-badge&logo=rocket&logoColor=white" alt="Student & Freelancer"/>
 <img src="https://img.shields.io/badge/Open_for-Freelance_Jobs_%7C_Collaboration-2ea44f?style=for-the-badge&logo=handshake&logoColor=white" alt="Open for Freelance"/>
 
@@ -154,7 +163,6 @@ flowchart LR
 | 🎯 | **ADY201m** · Dự án môn học | Phân tích & xử lý dữ liệu, trình bày insight bằng trực quan hóa |
 | 🧠 | **DAP391m** · Dự án môn học | Ứng dụng AI/Data vào bài toán thực tế |
 | 💼 | **Freelance Projects** | Nhận các dự án Web/AI/IoT ngoài giờ học để tích lũy kinh nghiệm |
-| 🏫 | **Dự án / giải thưởng cấp trường** | *(Điền tên dự án · kết quả)* |
 | 🌐 | **Chứng chỉ ngoại ngữ** | IELTS 6.5 · JLPT N3 |
 
 ---
@@ -182,7 +190,7 @@ flowchart LR
 
 <div align="center">
 
-<a href="mailto:your.email@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white&style=for-the-badge&logoWidth=20" alt="Gmail" height="40"/></a>
+<a href="mailto:dinhtanhuy547@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white&style=for-the-badge&logoWidth=20" alt="Gmail" height="40"/></a>
 
 <br/><br/>
 
@@ -191,3 +199,8 @@ flowchart LR
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=120&section=footer" width="100%" alt="Footer"/>
 
 </div>
+```
+
+**Lưu ý nhỏ cho bạn:**
+1. Nhớ thay `your.email@gmail.com` thành địa chỉ Gmail thực tế của bạn ở dòng cuối cùng nhé.
+2. Nếu lúc vừa dán vào mà ảnh Header hay Profile Views vẫn bị vỡ, bạn đừng lo nhé. Đó là do GitHub đang lưu bộ nhớ đệm (cache). Bạn thử ấn `Ctrl + F5` (hoặc Cmd + Shift + R trên Mac) để tải lại trang, hoặc đợi khoảng 1-2 phút rồi F5 lại là ảnh sẽ hiện lên hoàn chỉnh!
