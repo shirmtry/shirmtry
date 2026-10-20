@@ -174,11 +174,6 @@ flowchart LR
 <!-- Profile Summary Card -->
 <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=shirmtry&theme=radical" alt="Profile Details" width="95%"/>
 
-<br/>
-
-<!-- Trophies -->
-<img src="https://github-profile-trophy.vercel.app/?username=shirmtry&theme=radical&column=7&margin-w=15&margin-h=15" alt="GitHub Trophies" width="100%"/>
-
 </div>
 
 ---
