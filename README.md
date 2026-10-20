@@ -203,7 +203,7 @@ flowchart LR
 
 <p><b>🎯 Cùng chơi game Block Blast 8x8 do mình tự làm nhé!</b></p>
 
-<a href="https://shirmtry.github.io/shirmtry/game.html" target="_blank">
+<a href="https://shirmtry.github.io/shirmtry/index.html" target="_blank">
   <img src="https://img.shields.io/badge/PLAY-BLOCK_BLAST_8x8-FF5722?style=for-the-badge&logo=gamepad&logoColor=white" alt="Play Block Blast" height="60" />
 </a>
 
