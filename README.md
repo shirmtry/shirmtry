@@ -194,7 +194,7 @@ flowchart LR
 
 <div align="center">
 
-## 🎮 GAMING & ROBLOX CORNER
+## 🎮 GAMING
 
 <br/>
 
