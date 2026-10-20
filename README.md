@@ -183,35 +183,19 @@ flowchart LR
 
 ---
 
-## 🔥 GÓC GIẢI TRÍ & ĐAM MÊ (GOATs & MEMEs)
+## 🔥 GÓC GIẢI TRÍ & ĐAM MÊ
 
-> *"Code mệt rồi thì giải trí xíu thôi!"*
-
-### 🎮 Huyền thoại PUBG & Câu nói "Gáy" để đời
+### 🎮 GOAT PUBG
 [![Himass Channel](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@himass6999)
 
-> **Himass (GOAT PUBG đổi nghề sang game mới):**
-> 🗣️ *"M GÀ LẮM! 10 thằng như mày mới ăn được tao thế nha. Quá gà! Clutch được như tao thì hẵng nói ok, thua thì **câm mẹ mồm vào**!"* 
-> *(Trích lời nhắn nhủ gửi đến Taikon)* 🤣🤣
+> 🗣️ *"M GÀ LẮM! 10 thằng như mày mới ăn được tao thế nha. Quá gà! Clutch được như tao thì hẵng nói ok, thua thì **câm mẹ mồm vào**!"* 🤣🤣
 
-### 🏅 Những "GOATs" của Làng Thể Thao
-*(Bấm vào ảnh để xem video YouTube)*
+### 🏅 GOAT CÁC MÔN THỂ THAO
+*(Bấm vào ảnh để xem video tương ứng)*
 
-<div align="center">
-
-<a href="https://www.youtube.com/watch?v=6DTr6v4kqWg">
-  <img src="https://img.youtube.com/vi/6DTr6v4kqWg/0.jpg" alt="Lukaku Thánh Ngủ Gật" width="30%" style="border-radius: 10px;"/>
-</a>
-<a href="https://www.youtube.com/watch?v=I2N3mMke9z0">
-  <img src="https://img.youtube.com/vi/I2N3mMke9z0/0.jpg" alt="Yuki Ishikawa Volleyball GOAT" width="30%" style="border-radius: 10px;"/>
-</a>
-<a href="https://www.youtube.com/watch?v=06sPwL7zFNQ">
-  <img src="https://img.youtube.com/vi/06sPwL7zFNQ/0.jpg" alt="Zhang Zhanshuo Swimming GOAT" width="30%" style="border-radius: 10px;"/>
-</a>
-
-**Lukaku - Thánh Ngủ Gật** | **Yuki Ishikawa - GOAT Bóng Chuyền** | **Zhang Zhanshuo - GOAT Bơi Lội**
-
-</div>
+| <a href="https://www.youtube.com/watch?v=6DTr6v4kqWg"><img src="https://img.youtube.com/vi/6DTr6v4kqWg/0.jpg" alt="Video 1" width="100%"/></a> | <a href="https://www.youtube.com/watch?v=I2N3mMke9z0"><img src="https://img.youtube.com/vi/I2N3mMke9z0/0.jpg" alt="Video 2" width="100%"/></a> | <a href="https://www.youtube.com/watch?v=06sPwL7zFNQ"><img src="https://img.youtube.com/vi/06sPwL7zFNQ/0.jpg" alt="Video 3" width="100%"/></a> |
+|:---:|:---:|:---:|
+| <div align="center"><b>GOAT BÓNG ĐÁ</b></div> | <div align="center"><b>GOAT BÓNG CHUYỀN</b></div> | <div align="center"><b>GOAT BƠI LỘI</b></div> |
 
 ---
 
