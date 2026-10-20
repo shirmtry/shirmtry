@@ -206,7 +206,7 @@ flowchart LR
 <p><b>🎯 Cùng chơi Pac-Man ăn các ô đóng góp của mình nhé!</b></p>
 
 <!-- Game Pac-Man (Cần cài Github Action bên dưới) -->
-<img src="https://raw.githubusercontent.com/shirmtry/shirmtry/output/pacman-contribution-graph.svg" alt="Pac-Man Contribution Graph" width="100%" />
+<img src="./images/trophy.svg" alt="GitHub Trophies" width="100%"/>
 
 </div>
 
