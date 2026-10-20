@@ -192,6 +192,8 @@ flowchart LR
 
 ---
 
+<div align="center">
+
 ## 🎮 GAMING & ROBLOX CORNER
 
 <br/>
@@ -203,8 +205,6 @@ flowchart LR
 </a>
 
 </div>
-
----
 
 ## 😆 Developer Jokes & Quotes
 
