@@ -1,5 +1,5 @@
 <!-- ============================================================ -->
-<!--  GitHub Profile README · Đinh Tấn Huy (HUYTKING)             -->
+<!--  GitHub Profile README · Đinh Tấn Huy (shirmtry)             -->
 <!-- ============================================================ -->
 
 <div align="center">
@@ -20,13 +20,13 @@
 
 <br/><br/>
 
-<img src="https://komarev.com/ghpvc/?username=HUYTKING&label=Profile%20Views&color=7c3aed&style=flat-square" alt="Profile views"/>
+<img src="https://komarev.com/ghpvc/?username=shirmtry&label=Profile%20Views&color=7c3aed&style=flat-square" alt="Profile views"/>
 
 </div>
 
 ---
 
-## 👋 Xin chào, mình là HUYTKING
+## 👋 Xin chào, mình là shirmtry
 
 ```text
 > whoami
@@ -163,16 +163,16 @@ flowchart LR
 
 <div align="center">
 
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=HUYTKING&show_icons=true&theme=catppuccin_mocha&hide_border=true&include_all_commits=true&count_private=true&rank_icon=github" alt="GitHub Stats"/>
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=HUYTKING&layout=compact&theme=catppuccin_mocha&hide_border=true&langs_count=8" alt="Top Languages"/>
+<img height="180" src="https://github-readme-stats.vercel.app/api?username=shirmtry&show_icons=true&theme=catppuccin_mocha&hide_border=true&include_all_commits=true&count_private=true&rank_icon=github" alt="GitHub Stats"/>
+<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=shirmtry&layout=compact&theme=catppuccin_mocha&hide_border=true&langs_count=8" alt="Top Languages"/>
 
 <br/>
 
-<img src="https://streak-stats.demolab.com/?user=HUYTKING&theme=radical&hide_border=true" alt="GitHub Streak"/>
+<img src="https://streak-stats.demolab.com/?user=shirmtry&theme=radical&hide_border=true" alt="GitHub Streak"/>
 
 <br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=HUYTKING&bg_color=0d1117&color=a78bfa&line=7c3aed&point=ffffff&area=true&hide_border=true" alt="Contribution Graph" width="95%"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=shirmtry&bg_color=0d1117&color=a78bfa&line=7c3aed&point=ffffff&area=true&hide_border=true" alt="Contribution Graph" width="95%"/>
 
 </div>
 
