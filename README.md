@@ -166,7 +166,8 @@ flowchart LR
 
 <br/>
 
-<img src="https://streak-stats.demolab.com/?user=shirmtry&theme=radical&hide_border=true" alt="GitHub Streak"/>
+<!-- Đã đổi sang server Heroku ổn định hơn -->
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=shirmtry&theme=radical&hide_border=true" alt="GitHub Streak"/>
 
 <br/>
 
@@ -182,17 +183,44 @@ flowchart LR
 
 ---
 
+## 🔥 GÓC GIẢI TRÍ & ĐAM MÊ (GOATs & MEMEs)
+
+> *"Code mệt rồi thì giải trí xíu thôi!"*
+
+### 🎮 Huyền thoại PUBG & Câu nói "Gáy" để đời
+[![Himass Channel](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@himass6999)
+
+> **Himass (GOAT PUBG đổi nghề sang game mới):**
+> 🗣️ *"M GÀ LẮM! 10 thằng như mày mới ăn được tao thế nha. Quá gà! Clutch được như tao thì hẵng nói ok, thua thì **câm mẹ mồm vào**!"* 
+> *(Trích lời nhắn nhủ gửi đến Taikon)* 🤣🤣
+
+### 🏅 Những "GOATs" của Làng Thể Thao
+*(Bấm vào ảnh để xem video YouTube)*
+
+<div align="center">
+
+<a href="https://www.youtube.com/watch?v=6DTr6v4kqWg">
+  <img src="https://img.youtube.com/vi/6DTr6v4kqWg/0.jpg" alt="Lukaku Thánh Ngủ Gật" width="30%" style="border-radius: 10px;"/>
+</a>
+<a href="https://www.youtube.com/watch?v=I2N3mMke9z0">
+  <img src="https://img.youtube.com/vi/I2N3mMke9z0/0.jpg" alt="Yuki Ishikawa Volleyball GOAT" width="30%" style="border-radius: 10px;"/>
+</a>
+<a href="https://www.youtube.com/watch?v=06sPwL7zFNQ">
+  <img src="https://img.youtube.com/vi/06sPwL7zFNQ/0.jpg" alt="Zhang Zhanshuo Swimming GOAT" width="30%" style="border-radius: 10px;"/>
+</a>
+
+**Lukaku - Thánh Ngủ Gật** | **Yuki Ishikawa - GOAT Bóng Chuyền** | **Zhang Zhanshuo - GOAT Bơi Lội**
+
+</div>
+
+---
+
 ## 🎮 Gaming & Roblox Corner (Pac-Man Game)
 
 <div align="center">
 
 <img src="https://img.shields.io/badge/Roblox-Player_%26_Creator-FF0000?style=for-the-badge&logo=roblox&logoColor=white" alt="Roblox" />
 <img src="https://img.shields.io/badge/Gamer-Since_Childhood-blueviolet?style=for-the-badge&logo=steam&logoColor=white" alt="Gamer" />
-
-<br/><br/>
-
-<!-- Hình ảnh minh họa Roblox/Gaming vibe -->
-<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3Z2ZzR6eHZpZ3V4Z3R4Z3R4Z3R4Z3R4Z3R4Z3R4Z3R4JmVuY3J5cHRlZElkPUEwMDAwMDAwMDAwMDAmZXA9djFfaW50ZXJuYWxfZ2lmX2J5X2lkJmN0PWc/3o7TKSjRrfIPjeiVyM/giphy.gif" alt="Roblox Dance" width="300px" style="border-radius: 10px;"/>
 
 <br/><br/>
 
