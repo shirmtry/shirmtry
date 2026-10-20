@@ -194,12 +194,7 @@ flowchart LR
 
 ## 🎮 GAMING & ROBLOX CORNER
 
-<div align="center">
-
-<img src="https://img.shields.io/badge/Roblox-Player_%26_Creator-FF0000?style=for-the-badge&logo=roblox&logoColor=white" alt="Roblox" />
-<img src="https://img.shields.io/badge/Gamer-Since_Childhood-blueviolet?style=for-the-badge&logo=steam&logoColor=white" alt="Gamer" />
-
-<br/><br/>
+<br/>
 
 <p><b>🎯 Cùng chơi game Block Blast 8x8 do mình tự làm nhé!</b></p>
 
