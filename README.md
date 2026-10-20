@@ -4,7 +4,7 @@
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=230&section=header&text=%C4%90inh%20T%E1%BA%A5n%20Huy&fontSize=58&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=End-to-End%20Developer%20%7C%20AI%20%26%20System%20Engineer&descSize=18&descAlignY=58" width="100%" alt="Header banner"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=shirmtry&fontSize=60&fontColor=ffffff&fontAlignY=40" width="100%" alt="Header banner"/>
 
 <a href="https://git.io/typing-svg">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&duration=3000&pause=900&color=A78BFA&center=true&vCenter=true&width=720&lines=Full-Stack+Developer;Computer+Vision+%26+Edge+AI;System+Architect;IoT+%26+Embedded+Dev;From+Raw+Data+to+Production+%F0%9F%9A%80" alt="Typing SVG" />
@@ -169,10 +169,19 @@ flowchart LR
 
 <img src="https://streak-stats.demolab.com/?user=shirmtry&theme=radical&hide_border=true" alt="GitHub Streak"/>
 
-<br/>
+<br/><br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=shirmtry&bg_color=0d1117&color=a78bfa&line=7c3aed&point=ffffff&area=true&hide_border=true" alt="Contribution Graph" width="95%"/>
+<!-- Phần Cúp Thành Tích (Thay thế cho Contribution Graph bị lỗi) -->
+<img src="https://github-profile-trophy.vercel.app/?username=shirmtry&theme=radical&column=7&margin-w=15&margin-h=15" alt="GitHub Trophies" width="100%"/>
 
+</div>
+
+---
+
+## 💬 Random Dev Quote (Câu nói mỗi ngày)
+
+<div align="center">
+  <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Random Dev Quote" />
 </div>
 
 ---
@@ -181,7 +190,9 @@ flowchart LR
 
 <div align="center">
 
-<a href="mailto:dinhtanhuy547@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white&style=for-the-badge&logoWidth=20" alt="Gmail" height="40"/></a>
+<a href="mailto:dinhtanhuy547@gmail.com">
+  <img src="https://img.shields.io/badge/Send_me_an_Email-D14836?style=for-the-badge&logo=gmail&logoColor=white&logoWidth=25" alt="Gmail" height="45"/>
+</a>
 
 <br/><br/>
 
@@ -190,8 +201,3 @@ flowchart LR
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=120&section=footer" width="100%" alt="Footer"/>
 
 </div>
-```
-
-**Lưu ý nhỏ cho bạn:**
-1. Nhớ thay `your.email@gmail.com` thành địa chỉ Gmail thực tế của bạn ở dòng cuối cùng nhé.
-2. Nếu lúc vừa dán vào mà ảnh Header hay Profile Views vẫn bị vỡ, bạn đừng lo nhé. Đó là do GitHub đang lưu bộ nhớ đệm (cache). Bạn thử ấn `Ctrl + F5` (hoặc Cmd + Shift + R trên Mac) để tải lại trang, hoặc đợi khoảng 1-2 phút rồi F5 lại là ảnh sẽ hiện lên hoàn chỉnh!
