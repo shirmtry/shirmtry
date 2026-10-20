@@ -1,6 +1,5 @@
 <!-- ============================================================ -->
-<!--  GitHub Profile README · Đinh Tấn Huy                        -->
-<!--  Thay toàn bộ `YOUR_USERNAME` bằng GitHub username của bạn   -->
+<!--  GitHub Profile README · Đinh Tấn Huy (HUYTKING)             -->
 <!-- ============================================================ -->
 
 <div align="center">
@@ -16,11 +15,12 @@
 <img src="https://img.shields.io/badge/IELTS-6.5-E4002B?style=for-the-badge&logo=cambridge&logoColor=white" alt="IELTS 6.5"/>
 <img src="https://img.shields.io/badge/JLPT-N3-D70051?style=for-the-badge&logo=japan&logoColor=white" alt="JLPT N3"/>
 <img src="https://img.shields.io/badge/FPT_University-Quy_Nhơn-F27124?style=for-the-badge&logo=googlescholar&logoColor=white" alt="FPT University"/>
-<img src="https://img.shields.io/badge/Open_for-Collaboration_%7C_Internship-2ea44f?style=for-the-badge&logo=handshake&logoColor=white" alt="Open for collaboration"/>
+<img src="https://img.shields.io/badge/Status-Student_%26_Freelancer-ff69b4?style=for-the-badge&logo=rocket&logoColor=white" alt="Student & Freelancer"/>
+<img src="https://img.shields.io/badge/Open_for-Freelance_Jobs_%7C_Collaboration-2ea44f?style=for-the-badge&logo=handshake&logoColor=white" alt="Open for Freelance"/>
 
 <br/><br/>
 
-<img src="https://komarev.com/ghpvc/?username=YOUR_USERNAME&label=Profile%20Views&color=7c3aed&style=flat-square" alt="Profile views"/>
+<img src="https://komarev.com/ghpvc/?username=HUYTKING&label=Profile%20Views&color=7c3aed&style=flat-square" alt="Profile views"/>
 
 </div>
 
@@ -35,16 +35,19 @@
 > role
 End-to-End Developer · Full-Stack & AI/System Engineer
 
+> status
+Sinh viên CNTT & Freelancer (Full-Stack / AI / IoT)
+
 > mission
 Biến dữ liệu thô thành sản phẩm chạy thật: từ khảo sát, label data, train model,
 dựng backend/frontend, đóng gói Docker, deploy serverless cho tới dashboard analytics.
 ```
 
-- 🎓 Sinh viên Công nghệ Thông tin tại **FPT University Quy Nhơn**
-- 🔁 Phong cách **End-to-End**: tự đảm nhận toàn bộ vòng đời sản phẩm, không bỏ sót khâu nào
-- 👁️ Đam mê **Computer Vision, Edge AI** và các hệ thống **IoT/Embedded** chạy thời gian thực
-- 🌏 Giao tiếp tiếng Anh (**IELTS 6.5**) và tiếng Nhật (**JLPT N3**), sẵn sàng làm việc trong môi trường quốc tế
-- 🤝 Đang tìm kiếm cơ hội **Internship / Collaboration** về Full-Stack, AI Engineer hoặc IoT
+- 🎓 **Sinh viên Công nghệ Thông tin** tại FPT University Quy Nhơn.
+- 💼 **Freelancer:** Song song với việc học, mình nhận các dự án Freelance (Full-Stack, Computer Vision, IoT) để kiếm thêm thu nhập và tích lũy kinh nghiệm thực chiến.
+- 🔁 Phong cách **End-to-End**: Tự đảm nhận toàn bộ vòng đời sản phẩm, từ ý tưởng đến khi deploy và bảo trì.
+- 👁️ Đam mê **Computer Vision, Edge AI** và các hệ thống **IoT/Embedded** chạy thời gian thực.
+- 🌏 Giao tiếp tiếng Anh (**IELTS 6.5**) và tiếng Nhật (**JLPT N3**), sẵn sàng làm việc trong môi trường quốc tế.
 
 ---
 
@@ -72,7 +75,6 @@ dựng backend/frontend, đóng gói Docker, deploy serverless cho tới dashboa
   <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" alt="NumPy"/>
   <img src="https://img.shields.io/badge/Roboflow-6706CE?style=for-the-badge&logo=roboflow&logoColor=white" alt="Roboflow"/>
   <img src="https://img.shields.io/badge/LabelImg-Data_Labeling-orange?style=for-the-badge" alt="LabelImg"/>
-  <img src="https://img.shields.io/badge/Data_Analytics-8A2BE2?style=for-the-badge&logo=databricks&logoColor=white" alt="Data Analytics"/>
 </p>
 
 ### ⚙️ Backend & Database
@@ -115,13 +117,13 @@ dựng backend/frontend, đóng gói Docker, deploy serverless cho tới dashboa
 
 > Mỗi dự án đều đi trọn vòng đời: **Khảo sát → Label/Preprocess → Train → Backend → Frontend → Deploy → Analytics**.
 
-| # | Bài toán / Dự án | Thách thức & Giải pháp (Label → Train → BE → FE → Deploy) | Tech Stack |
+| # | Bài toán / Dự án | Thách thức & Giải pháp | Tech Stack |
 |:-:|---|---|---|
-| 1 | **🎓 Hệ thống giám sát đa thức cảm xúc & hành vi lớp học Real-time**<br/>*(Computer Vision + Fullstack Pipeline)* | **Thách thức:** nhận diện đồng thời nhiều khuôn mặt, cảm xúc và hành vi trong luồng video với độ trễ thấp.<br/>**Giải pháp:** tự thu thập & **label dataset** → **train YOLO** kết hợp **DeepFace/MediaPipe** → pipeline xử lý stream video → **Backend ghi log vào MongoDB** → **Web Dashboard** hiển thị analytics theo thời gian thực. | `Python` `YOLO` `DeepFace` `MediaPipe` `OpenCV` `MongoDB` `React` |
-| 2 | **🚗 Nhận diện biển số xe & quản lý bãi xe thông minh** | **Thách thức:** biển số bị nghiêng, mờ, thiếu sáng; cần tra cứu và lưu vết vào/ra chính xác.<br/>**Giải pháp:** **preprocess ảnh** → **train model OCR/YOLO** → viết **RESTful API** → kết nối **PostgreSQL** → giao diện quản lý bãi xe. | `Python` `YOLO` `OCR` `OpenCV` `Node.js` `Express` `PostgreSQL` |
-| 3 | **☀️ Mô phỏng năng lượng mặt trời Dual-Axis & giám sát IoT ESP32** | **Thách thức:** tối ưu hướng tấm pin theo hai trục và truyền dữ liệu cảm biến ổn định.<br/>**Giải pháp:** lập trình nhúng **ESP32** đọc cảm biến → mô phỏng Dual-Axis trên **Canvas/Gazebo ROS** → đẩy dữ liệu lên **Serverless Redis** → **Streamlit Dashboard**. | `C/C++` `ESP32` `Arduino` `ROS` `Gazebo` `Upstash Redis` `Streamlit` |
-| 4 | **🛸 Hạ tầng logistics droning & bản đồ floor topology trong nhà** | **Thách thức:** định vị và di chuyển trong không gian kín, không có GPS.<br/>**Giải pháp:** xây dựng **topology không gian 3D/Point Cloud** → mô phỏng chuyển động bằng **ROS/Gazebo** → **tối ưu thuật toán đường đi**. | `ROS` `Gazebo` `Python` `C++` `Point Cloud` `Path Planning` |
-| 5 | **🛒 benh.shop: Serverless E-Commerce / Web Platform** | **Thách thức:** hệ thống thương mại điện tử nhẹ, nhanh, chi phí vận hành thấp.<br/>**Giải pháp:** thiết kế **schema Redis/PostgreSQL** → xây **Backend Serverless API** → **deploy Vercel** → **Frontend UI** mượt mà. | `Next.js` `TypeScript` `TailwindCSS` `Redis` `PostgreSQL` `Vercel` |
+| 1 | **🎓 Giám sát đa thức cảm xúc & hành vi lớp học Real-time**<br/>*(Computer Vision + Fullstack)* | **Thách thức:** nhận diện nhiều khuôn mặt, cảm xúc và hành vi độ trễ thấp.<br/>**Giải pháp:** Tự thu thập & label dataset → Train YOLO + DeepFace/MediaPipe → Pipeline xử lý stream → Backend ghi log MongoDB → Web Dashboard analytics. | `Python` `YOLO` `DeepFace` `OpenCV` `MongoDB` `React` |
+| 2 | **🚗 Nhận diện biển số xe & quản lý bãi xe thông minh** | **Thách thức:** biển số nghiêng, mờ, thiếu sáng; cần tra cứu chính xác.<br/>**Giải pháp:** Preprocess ảnh → Train model OCR/YOLO → Viết RESTful API → Kết nối PostgreSQL → Giao diện quản lý bãi xe. | `Python` `YOLO` `OCR` `Node.js` `Express` `PostgreSQL` |
+| 3 | **☀️ Mô phỏng năng lượng mặt trời Dual-Axis & IoT ESP32** | **Thách thức:** Tối ưu hướng tấm pin và truyền dữ liệu ổn định.<br/>**Giải pháp:** Lập trình nhúng ESP32 → Mô phỏng Dual-Axis trên Gazebo ROS → Đẩy dữ liệu lên Serverless Redis → Streamlit Dashboard. | `C/C++` `ESP32` `ROS` `Gazebo` `Upstash Redis` `Streamlit` |
+| 4 | **🛸 Hạ tầng logistics droning & bản đồ floor topology** | **Thách thức:** Định vị và di chuyển trong không gian kín, không GPS.<br/>**Giải pháp:** Xây dựng topology không gian 3D/Point Cloud → Mô phỏng chuyển động ROS/Gazebo → Tối ưu thuật toán đường đi. | `ROS` `Gazebo` `Python` `C++` `Point Cloud` `Path Planning` |
+| 5 | **🛒 benh.shop: Serverless E-Commerce Platform** | **Thách thức:** Hệ thống thương mại điện tử nhẹ, nhanh, chi phí thấp.<br/>**Giải pháp:** Thiết kế schema Redis/PostgreSQL → Backend Serverless API → Deploy Vercel → Frontend UI mượt mà. | `Next.js` `TypeScript` `TailwindCSS` `Redis` `PostgreSQL` `Vercel` |
 
 <details>
 <summary><b>🔎 Xem quy trình End-to-End mình thường áp dụng</b></summary>
@@ -145,15 +147,13 @@ flowchart LR
 
 ## 🏆 Thành tích, cuộc thi & hoạt động
 
-> ✏️ *Cập nhật các mốc dưới đây theo thông tin thực tế của bạn (điểm số, giải thưởng, năm học).*
+> ✏️ *Cập nhật các mốc dưới đây theo thông tin thực tế của bạn.*
 
 | Mốc | Hoạt động | Ghi chú |
 |:-:|---|---|
 | 🎯 | **ADY201m** · Dự án môn học | Phân tích & xử lý dữ liệu, trình bày insight bằng trực quan hóa |
 | 🧠 | **DAP391m** · Dự án môn học | Ứng dụng AI/Data vào bài toán thực tế |
-| 🤖 | **MAI391** · Dự án môn học | Nền tảng toán cho AI, áp dụng vào xây dựng và đánh giá model |
-| 💻 | **Hackathon** | *(Điền tên cuộc thi · năm · kết quả)* |
-| 🏅 | **OLP Tin học** | *(Điền cấp thi · năm · kết quả)* |
+| 💼 | **Freelance Projects** | Nhận các dự án Web/AI/IoT ngoài giờ học để tích lũy kinh nghiệm |
 | 🏫 | **Dự án / giải thưởng cấp trường** | *(Điền tên dự án · kết quả)* |
 | 🌐 | **Chứng chỉ ngoại ngữ** | IELTS 6.5 · JLPT N3 |
 
@@ -163,16 +163,16 @@ flowchart LR
 
 <div align="center">
 
-<img height="180" src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=catppuccin_mocha&hide_border=true&include_all_commits=true&count_private=true&rank_icon=github" alt="GitHub Stats"/>
-<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&theme=catppuccin_mocha&hide_border=true&langs_count=8" alt="Top Languages"/>
+<img height="180" src="https://github-readme-stats.vercel.app/api?username=HUYTKING&show_icons=true&theme=catppuccin_mocha&hide_border=true&include_all_commits=true&count_private=true&rank_icon=github" alt="GitHub Stats"/>
+<img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=HUYTKING&layout=compact&theme=catppuccin_mocha&hide_border=true&langs_count=8" alt="Top Languages"/>
 
 <br/>
 
-<img src="https://streak-stats.demolab.com/?user=YOUR_USERNAME&theme=radical&hide_border=true" alt="GitHub Streak"/>
+<img src="https://streak-stats.demolab.com/?user=HUYTKING&theme=radical&hide_border=true" alt="GitHub Streak"/>
 
 <br/>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=YOUR_USERNAME&bg_color=0d1117&color=a78bfa&line=7c3aed&point=ffffff&area=true&hide_border=true" alt="Contribution Graph" width="95%"/>
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=HUYTKING&bg_color=0d1117&color=a78bfa&line=7c3aed&point=ffffff&area=true&hide_border=true" alt="Contribution Graph" width="95%"/>
 
 </div>
 
@@ -182,10 +182,7 @@ flowchart LR
 
 <div align="center">
 
-<a href="mailto:your.email@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/></a>
-<a href="https://www.linkedin.com/in/YOUR_LINKEDIN/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-<a href="https://your-portfolio.vercel.app"><img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio"/></a>
-<a href="https://www.facebook.com/YOUR_FACEBOOK"><img src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="Facebook"/></a>
+<a href="mailto:your.email@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white&style=for-the-badge&logoWidth=20" alt="Gmail" height="40"/></a>
 
 <br/><br/>
 
