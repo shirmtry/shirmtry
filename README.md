@@ -232,8 +232,6 @@ flowchart LR
 
 ---
 
-## ☕ DONATE CHO TÔI LY CAFE
-
 <div align="center">
 
 <img src="https://raw.githubusercontent.com/shirmtry/shirmtry/main/qr.jpg" alt="QR Donate" width="320" style="border-radius: 16px;"/>
