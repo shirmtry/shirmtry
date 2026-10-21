@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kế hoạch IELTS – Shadowing, Writing & Speaking</title>
+<style>
+  :root {
+    color-scheme: light;
+    --bg: #f4f7fb;
+    --card: #ffffff;
+    --text: #172033;
+    --muted: #64748b;
+    --line: #e2e8f0;
+    --blue: #2563eb;
+    --purple: #7c3aed;
+    --teal: #0f766e;
+    --orange: #c2410c;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.55;
+  }
+  header {
+    padding: 42px 20px 32px;
+    background: linear-gradient(135deg, #102a56, #2563eb 65%, #7c3aed);
+    color: white;
+  }
+  .hero, main { max-width: 1100px; margin: 0 auto; }
+  .eyebrow { font-size: .78rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; opacity: .8; }
+  h1 { margin: 8px 0; font-size: clamp(1.8rem, 4vw, 2.8rem); line-height: 1.15; }
+  header p { max-width: 720px; margin-bottom: 0; color: #e5edff; }
+  main { padding: 24px 18px 52px; }
+  .summary {
+    display: grid; grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px; margin-top: -4px; margin-bottom: 24px;
+  }
+  .stat { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 16px; }
+  .stat strong { display: block; font-size: 1.45rem; }
+  .stat span { color: var(--muted); font-size: .9rem; }
+  .toolbar { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; margin: 18px 0 24px; }
+  .progress-wrap { flex: 1 1 220px; }
+  .progress-label { display: flex; justify-content: space-between; color: var(--muted); font-size: .88rem; margin-bottom: 7px; }
+  .track { height: 9px; border-radius: 99px; background: #dbe4f0; overflow: hidden; }
+  .bar { width: 0%; height: 100%; background: linear-gradient(90deg, #2563eb, #7c3aed); transition: width .2s; }
+  button {
+    border: 1px solid var(--line); background: white; color: var(--text);
+    padding: 9px 13px; border-radius: 10px; font-weight: 650; cursor: pointer;
+  }
+  button:hover { border-color: #93a9c7; }
+  .section-title { display: flex; align-items: center; gap: 10px; margin: 30px 0 14px; }
+  .section-title h2 { font-size: 1.25rem; margin: 0; }
+  .section-title span { color: var(--muted); font-size: .88rem; }
+  .cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+    padding: 18px; box-shadow: 0 4px 16px rgba(15, 23, 42, .035);
+  }
+  .card.full { grid-column: 1 / -1; }
+  .card-top { display: flex; justify-content: space-between; gap: 12px; align-items: flex-start; }
+  .tag { display: inline-block; font-size: .72rem; font-weight: 800; letter-spacing: .04em; border-radius: 999px; padding: 4px 9px; margin-bottom: 8px; }
+  .tag.shadow { background: #ede9fe; color: #5b21b6; }
+  .tag.writing { background: #dbeafe; color: #1d4ed8; }
+  .tag.speaking { background: #ccfbf1; color: #115e59; }
+  .tag.test { background: #ffedd5; color: #9a3412; }
+  h3 { font-size: 1.08rem; margin: 0 0 8px; }
+  .source { color: var(--muted); font-size: .88rem; margin: 0 0 12px; }
+  ul { padding-left: 21px; margin: 10px 0; }
+  li { padding: 3px 0; }
+  .task-check {
+    display: flex; align-items: flex-start; gap: 10px; padding: 9px 0;
+    border-bottom: 1px solid #f0f3f8;
+  }
+  .task-check:last-child { border-bottom: 0; }
+  input[type="checkbox"] { width: 18px; height: 18px; margin-top: 3px; accent-color: var(--blue); flex: 0 0 auto; }
+  .task-check label { cursor: pointer; }
+  .task-check input:checked + label { color: #7b8798; text-decoration: line-through; }
+  .note { border-left: 4px solid #f59e0b; background: #fff7ed; padding: 13px 15px; border-radius: 8px; margin-top: 20px; color: #7c2d12; }
+  footer { text-align: center; color: var(--muted); font-size: .85rem; padding: 0 18px 28px; }
+  @media (max-width: 720px) {
+    .summary { grid-template-columns: 1fr; }
+    .cards { grid-template-columns: 1fr; }
+    .card.full { grid-column: auto; }
+    header { padding-top: 32px; }
+  }
+  @media print {
+    body { background: white; }
+    header { background: #17366c !important; print-color-adjust: exact; }
+    .toolbar button { display: none; }
+    .card, .stat { box-shadow: none; break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="hero">
+    <div class="eyebrow">IELTS Daily Checklist</div>
+    <h1>Kế hoạch học IELTS</h1>
+    <p>Tổng hợp toàn bộ bài Shadowing, Writing Task 1–2, Speaking và yêu cầu nộp report theo nội dung đã gửi.</p>
+  </div>
+</header>
+
+<main>
+  <section class="summary" aria-label="Tổng quan">
+    <div class="stat"><strong>4 bài</strong><span>Shadowing: Exercise 16–19</span></div>
+    <div class="stat"><strong>2 bài</strong><span>Writing Task 1 và Task 2 – Đề 02</span></div>
+    <div class="stat"><strong>1 bài</strong><span>Speaking Exercise 1 – tối thiểu Band 7.0</span></div>
+  </section>
+
+  <div class="toolbar">
+    <div class="progress-wrap">
+      <div class="progress-label"><span>Tiến độ hoàn thành</span><strong id="progressText">0%</strong></div>
+      <div class="track"><div class="bar" id="progressBar"></div></div>
+    </div>
+    <button type="button" id="resetBtn">Bỏ chọn tất cả</button>
+    <button type="button" onclick="window.print()">In / lưu PDF</button>
+  </div>
+
+  <div class="section-title"><h2>1. Shadowing</h2><span>Folder “HUY”</span></div>
+  <div class="cards">
+    <article class="card">
+      <span class="tag shadow">SHADOWING</span>
+      <h3>Exercise 16</h3>
+      <p class="source">Nguồn: Folder “HUY”</p>
+      <div class="task-check"><input id="t1" type="checkbox"><label for="t1">Hoàn thành Shadowing Exercise 16.</label></div>
+      <div class="task-check"><input id="t2" type="checkbox"><label for="t2">Chuẩn bị bản dịch tiếng Việt cho bài Shadowing.</label></div>
+    </article>
+    <article class="card">
+      <span class="tag shadow">SHADOWING</span>
+      <h3>Exercise 17</h3>
+      <p class="source">Nguồn: Folder “HUY”</p>
+      <div class="task-check"><input id="t3" type="checkbox"><label for="t3">Hoàn thành Shadowing Exercise 17.</label></div>
+      <div class="task-check"><input id="t4" type="checkbox"><label for="t4">Chuẩn bị bản dịch tiếng Việt cho bài Shadowing.</label></div>
+    </article>
+    <article class="card">
+      <span class="tag shadow">SHADOWING</span>
+      <h3>Exercise 18</h3>
+      <p class="source">Nguồn: Folder “HUY”</p>
+      <div class="task-check"><input id="t5" type="checkbox"><label for="t5">Hoàn thành Shadowing Exercise 18.</label></div>
+      <div class="task-check"><input id="t6" type="checkbox"><label for="t6">Chuẩn bị bản dịch tiếng Việt cho bài Shadowing.</label></div>
+    </article>
+    <article class="card">
+      <span class="tag shadow">SHADOWING</span>
+      <h3>Exercise 19</h3>
+      <p class="source">Nguồn: Folder “HUY”</p>
+      <div class="task-check"><input id="t7" type="checkbox"><label for="t7">Hoàn thành Shadowing Exercise 19.</label></div>
+      <div class="task-check"><input id="t8" type="checkbox"><label for="t8">Chuẩn bị bản dịch tiếng Việt cho bài Shadowing.</label></div>
+    </article>
+  </div>
+
+  <div class="section-title"><h2>2. Writing Task 1</h2><span>Folder “IELTS” → “WRITING”</span></div>
+  <div class="cards">
+    <article class="card">
+      <span class="tag test">KIỂM TRA TRỰC TIẾP</span>
+      <h3>7h – Test Writing Task 1, Đề 1</h3>
+      <div class="task-check"><input id="t9" type="checkbox"><label for="t9">Tham gia bài test Writing Task 1 – Đề 1 lúc 7h.</label></div>
+    </article>
+    <article class="card">
+      <span class="tag writing">WRITING TASK 1</span>
+      <h3>Đề 02 – Sheet “Wri T2”</h3>
+      <p class="source">Viết dựa trên dàn bài đã được cung cấp sẵn.</p>
+      <div class="task-check"><input id="t10" type="checkbox"><label for="t10">Viết hoàn chỉnh Writing Task 1 – Đề 02 theo dàn bài.</label></div>
+      <div class="task-check"><input id="t11" type="checkbox"><label for="t11">Quay video quá trình làm bài và chụp hình bài viết.</label></div>
+      <div class="task-check"><input id="t12" type="checkbox"><label for="t12">Quay video dịch toàn bộ bài viết sang tiếng Việt.</label></div>
+      <div class="task-check"><input id="t13" type="checkbox"><label for="t13">Quay video nói lại bản dịch tiếng Việt khi che mắt, không nhìn bài.</label></div>
+      <div class="task-check"><input id="t14" type="checkbox"><label for="t14">Nộp report hằng ngày.</label></div>
+    </article>
+  </div>
+
+  <div class="section-title"><h2>3. Speaking</h2><span>Folder “Speaking” → PDF “SPEAKING”</span></div>
+  <div class="cards">
+    <article class="card full">
+      <span class="tag speaking">SPEAKING – EXERCISE 1</span>
+      <h3>Hoàn thành yêu cầu Exercise 1</h3>
+      <div class="task-check"><input id="t15" type="checkbox"><label for="t15">Mở file PDF “SPEAKING” trong folder “Speaking”.</label></div>
+      <div class="task-check"><input id="t16" type="checkbox"><label for="t16">Làm đầy đủ yêu cầu của Exercise 1.</label></div>
+      <div class="task-check"><input id="t17" type="checkbox"><label for="t17">Viết bài text đạt mục tiêu tối thiểu Band 7.0.</label></div>
+      <div class="task-check"><input id="t18" type="checkbox"><label for="t18">Nộp report hằng ngày.</label></div>
+    </article>
+  </div>
+
+  <div class="section-title"><h2>4. Writing Task 2</h2><span>Folder “IELTS” → “WRITING”</span></div>
+  <div class="cards">
+    <article class="card full">
+      <span class="tag writing">WRITING TASK 2</span>
+      <h3>Đề 02 – Sheet “Wri T2”</h3>
+      <p class="source">Viết dựa trên dàn bài đã được cung cấp sẵn.</p>
+      <div class="task-check"><input id="t19" type="checkbox"><label for="t19">Viết hoàn chỉnh Writing Task 2 – Đề 02 theo dàn bài.</label></div>
+      <div class="task-check"><input id="t20" type="checkbox"><label for="t20">Quay video quá trình làm bài và chụp hình bài viết.</label></div>
+      <div class="task-check"><input id="t21" type="checkbox"><label for="t21">Quay video dịch toàn bộ bài viết sang tiếng Việt.</label></div>
+      <div class="task-check"><input id="t22" type="checkbox"><label for="t22">Quay video nói lại bản dịch tiếng Việt khi che mắt, không nhìn bài.</label></div>
+      <div class="task-check"><input id="t23" type="checkbox"><label for="t23">Nộp report hằng ngày.</label></div>
+    </article>
+  </div>
+
+  <div class="note"><strong>Lưu ý quan trọng:</strong> Với tất cả bài Shadowing (Exercise 16–19), nhớ kèm bản dịch tiếng Việt. Các mục “quay video”, “chụp hình” và “nộp report hằng ngày” cần được đánh dấu riêng khi hoàn thành.</div>
+</main>
+<footer>Checklist học tập cá nhân · Có thể đánh dấu tiến độ và in/lưu thành PDF ngay trên trình duyệt.</footer>
+
+<script>
+  const checks = Array.from(document.querySelectorAll('input[type="checkbox"]'));
+  const progressText = document.getElementById('progressText');
+  const progressBar = document.getElementById('progressBar');
+
+  function updateProgress() {
+    const done = checks.filter(c => c.checked).length;
+    const pct = checks.length ? Math.round(done / checks.length * 100) : 0;
+    progressText.textContent = `${pct}% (${done}/${checks.length})`;
+    progressBar.style.width = `${pct}%`;
+  }
+  checks.forEach((check) => {
+    const saved = localStorage.getItem(`ielts-checklist-${check.id}`);
+    if (saved !== null) check.checked = saved === 'true';
+    check.addEventListener('change', () => {
+      localStorage.setItem(`ielts-checklist-${check.id}`, String(check.checked));
+      updateProgress();
+    });
+  });
+  document.getElementById('resetBtn').addEventListener('click', () => {
+    checks.forEach(check => {
+      check.checked = false;
+      localStorage.setItem(`ielts-checklist-${check.id}`, 'false');
+    });
+    updateProgress();
+  });
+  updateProgress();
+</script>
+</body>
+</html>
