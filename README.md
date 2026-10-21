@@ -229,3 +229,23 @@ flowchart LR
 *"Dữ liệu là nguyên liệu, model là công cụ, sản phẩm chạy thật mới là đích đến."* 🚀
 
 </div>
+
+---
+
+## ☕ DONATE CHO TÔI LY CAFE
+
+<div align="center">
+
+<img src="https://raw.githubusercontent.com/shirmtry/shirmtry/main/qr.jpg" alt="QR Donate" width="320" style="border-radius: 16px;"/>
+
+<br/><br/>
+
+### 💜 DONATE CHO TÔI LY CAFE 💜
+
+<i>Mọi sự ủng hộ của bạn là động lực để mình tiếp tục code, học hỏi và chia sẻ! 🚀</i>
+
+<br/>
+
+*Cảm ơn bạn đã ghé qua và ủng hộ mình! 💜*
+
+</div>
