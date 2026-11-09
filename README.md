@@ -44,7 +44,7 @@ dựng backend/frontend, đóng gói Docker, deploy serverless cho tới dashboa
 - 💼 **Freelancer:** Song song với việc học, mình nhận các dự án Freelance (Full-Stack, Computer Vision, IoT) để kiếm thêm thu nhập.
 - 🔁 Phong cách **End-to-End**: Tự đảm nhận toàn bộ vòng đời sản phẩm, từ ý tưởng đến khi deploy.
 - 👁️ Đam mê **Computer Vision, Edge AI** và các hệ thống **IoT/Embedded**.
-- 🌏 Giao tiếp tiếng Anh (**IELTS 6.5**) và tiếng Nhật (**JLPT N3**).
+- 🌏 Giao tiếp tiếng Anh (**IELTS 5.0**) .
 - 🎮 **Gamer:** Thích chơi game giải trí, đặc biệt là các tựa game thế giới mở, sáng tạo như **Roblox**.
 
 ---
@@ -152,7 +152,7 @@ flowchart LR
 | 🎯 | **ADY201m** · Dự án môn học | Phân tích & xử lý dữ liệu, trình bày insight bằng trực quan hóa |
 | 🧠 | **DAP391m** · Dự án môn học | Ứng dụng AI/Data vào bài toán thực tế |
 | 💼 | **Freelance Projects** | Nhận các dự án Web/AI/IoT ngoài giờ học để tích lũy kinh nghiệm |
-| 🌐 | **Chứng chỉ ngoại ngữ** | IELTS 6.5 · JLPT N3 |
+| 🌐 | **Chứng chỉ ngoại ngữ** | IELTS 5.0 |
 
 ---
 
