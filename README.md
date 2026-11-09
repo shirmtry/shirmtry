@@ -10,8 +10,7 @@
 
 <br/>
 
-<img src="https://img.shields.io/badge/IELTS-6.5-E4002B?style=for-the-badge&logo=cambridge&logoColor=white" alt="IELTS 6.5"/>
-<img src="https://img.shields.io/badge/JLPT-N3-D70051?style=for-the-badge&logo=japan&logoColor=white" alt="JLPT N3"/>
+<img src="https://img.shields.io/badge/IELTS-5.0-E4002B?style=for-the-badge&logo=cambridge&logoColor=white" alt="IELTS 5.0"/>
 <img src="https://img.shields.io/badge/FPT_University-Quy_Nh%C6%A1n-F27124?style=for-the-badge&logo=googlescholar&logoColor=white" alt="FPT University"/>
 <img src="https://img.shields.io/badge/Status-Student_%26_Freelancer-ff69b4?style=for-the-badge&logo=rocket&logoColor=white" alt="Student & Freelancer"/>
 <img src="https://img.shields.io/badge/Open_for-Freelance_Jobs_%7C_Collaboration-2ea44f?style=for-the-badge&logo=handshake&logoColor=white" alt="Open for Freelance"/>
