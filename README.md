@@ -653,6 +653,8 @@ What you get: a scoped plan with the trade-off written down before any code.
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:05060A,40:4C1D95,80:0E7490,100:05060A&height=120&section=footer&text=model%20%E2%86%92%20serving%20%E2%86%92%20API%20%E2%86%92%20UI%20%E2%86%92%20deploy%20%E2%86%92%20monitor&fontSize=16&fontColor=C9D1E9&fontAlignY=68" alt="footer" width="100%"/>
 
+<img src="https://raw.githubusercontent.com/shirmtry/shirmtry/output/github-contribution-grid-snake-dark.svg" alt="Contribution field" width="58%"/>
+
 <!-- AUTO:START -->
 <sub>Last auto-update: <b>2026-11-11 09:31 UTC</b> · <b>39</b> public repos · <b>0</b> stars · top language <b>HTML, TypeScript, JavaScript</b> · <a href=".github/workflows/update-profile.yml">telemetry workflow</a></sub>
 <!-- AUTO:END -->
